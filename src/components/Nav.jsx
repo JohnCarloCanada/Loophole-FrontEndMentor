@@ -42,10 +42,10 @@ const Nav = () => {
       </nav>
       {/* Mobile Menu */}
       <nav className={nav ? "openMenu" : "closeMenu"}>
-        <section className="flex justify-between items-center">
+        <div className="flex justify-between items-center">
           <img className="w-[150px]" src={logo} alt="logo" />
           <img onClick={handleMenu} className="w-6 h-6 cursor-pointer" src={closeMenu} alt="Close Menu" />
-        </section>
+        </div>
         <ul className="text-white mt-32">
           <li className="text-2xl font-josefin uppercase mb-7">
             <a aria-label="Go To About Page" className="inline-block underLine underLineHover before:bottom-[-35px]" href="#">
