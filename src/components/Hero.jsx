@@ -31,6 +31,7 @@ const Hero = () => {
           </button>
         </div>
         <section className="grid gap-y-4 mt-10 md:grid-cols-4 md:gap-x-4">
+          <h2 className="sr-only">IMAGE GALLERY</h2>
           {width <= 768
             ? mobileImages.map((image, index) => <CreationGallery key={index} image={image.image} text={image.text} />)
             : desktopImages.map((image, index) => <CreationGallery key={index} image={image.image} text={image.text} />)}

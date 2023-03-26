@@ -17,4 +17,7 @@
   .underLineHover:hover::before {
     @apply w-[50%] duration-300 ease-in;
   }
+  .sr-only {
+    @apply absolute w-[1px] h-[1px] text-[1px] left-[-99999px] overflow-hidden p-0 m-[1px] border-0;
+  }
 }

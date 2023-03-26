@@ -12,35 +12,30 @@ const Footer = () => {
         <img className="w-32" src={logo} alt="logo" />
         <nav aria-label="Navigation For Footer" className="mt-7">
           <ul className="text-white md:flex">
-            <li
-              aria-label="Go To About Page"
-              className="font-josefin mb-3 md:mb-0 md:mr-3 text-center font-bold cursor-pointer underLine underLineHover"
-            >
-              About
+            <li className="font-josefin mb-3 md:mb-0 md:mr-3 text-center font-bold cursor-pointer">
+              <a className="underLine underLineHover" aria-label="Go To About Page" href="#">
+                About
+              </a>
             </li>
-            <li
-              aria-label="Go To Careers Page"
-              className="font-josefin mb-3 md:mb-0 md:mr-3 text-center font-bold cursor-pointer underLine underLineHover"
-            >
-              Careers
+            <li className="font-josefin mb-3 md:mb-0 md:mr-3 text-center font-bold cursor-pointer">
+              <a className="underLine underLineHover" aria-label="Go To Careers Page" href="#">
+                Careers
+              </a>
             </li>
-            <li
-              aria-label="Go To Events Page"
-              className="font-josefin mb-3 md:mb-0 md:mr-3 text-center font-bold cursor-pointer underLine underLineHover"
-            >
-              Events
+            <li className="font-josefin mb-3 md:mb-0 md:mr-3 text-center font-bold cursor-pointer">
+              <a className="underLine underLineHover" aria-label="Go To Events Page" href="#">
+                Events
+              </a>
             </li>
-            <li
-              aria-label="Go To Products Page"
-              className="font-josefin mb-3 md:mb-0 md:mr-3 text-center font-bold cursor-pointer underLine underLineHover"
-            >
-              Products
+            <li className="font-josefin mb-3 md:mb-0 md:mr-3 text-center font-bold cursor-pointer">
+              <a className="underLine underLineHover" aria-label="Go To Products Page" href="#">
+                Products
+              </a>
             </li>
-            <li
-              aria-label="Go To Support Page"
-              className="font-josefin mb-3 md:mb-0 md:mr-3 text-center font-bold cursor-pointer underLine underLineHover"
-            >
-              Support
+            <li className="font-josefin mb-3 md:mb-0 md:mr-3 text-center font-bold cursor-pointer">
+              <a className="underLine underLineHover" aria-label="Go To Support Page" href="#">
+                Support
+              </a>
             </li>
           </ul>
         </nav>
