@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="bg-black px-8 pt-14 pb-10 md:px-14 md:py-10 md:grid md:grid-cols-2">
       <div className="flex flex-col items-center justify-center md:items-start">
         <img className="w-32" src={logo} alt="logo" />
-        <nav className="mt-7">
+        <nav aria-label="Navigation For Footer" className="mt-7">
           <ul className="text-white md:flex">
             <li
               aria-label="Go To About Page"

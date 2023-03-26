@@ -9,7 +9,7 @@ const Nav = () => {
   const handleMenu = () => setNav(nav === false ? true : false);
   return (
     <>
-      <nav className="flex px-8 py-10 md:px-14 md:py-10 justify-between items-center font-alata">
+      <nav aria-label="Main Navigation" className="flex px-8 py-10 md:px-14 md:py-10 justify-between items-center font-alata">
         <img src={logo} alt="logo" />
         <ul className="hidden md:flex">
           <li className="ml-10 text-white">
