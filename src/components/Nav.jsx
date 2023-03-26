@@ -1,10 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.svg";
 import openMenu from "../assets/icon-hamburger.svg";
 import closeMenu from "../assets/icon-close.svg";
 
 const Nav = () => {
   const [nav, setNav] = useState(false);
+
+  useEffect(() => {
+    let isSubscribed = true;
+
+    if (isSubscribed) {
+      nav ? window.document.body.classList.add("overflow-hidden") : window.document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => (isSubscribed = false);
+  }, [nav]);
 
   const handleMenu = () => setNav(nav === false ? true : false);
   return (
