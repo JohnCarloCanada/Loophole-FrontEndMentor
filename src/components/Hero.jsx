@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="mx-8 py-10 md:mx-14 md:py-10 md:pb-0 text-center md:flex md:relative">
+      <section className="mx-8 py-10 md:mx-32 md:py-10 md:pb-0 text-center md:flex md:relative">
         <img aria-hidden="true" src={width <= 768 ? heroImageMobile : heroImageDesktop} alt="Hero Image" />
         <div className="bg-white md:w-[650px] md:p-7 md:absolute md:bottom-0 md:right-0">
           <h2 className="mt-8 md:mt-0 text-4xl md:text-5xl font-josefin">THE LEADER IN INTERACTIVE VR</h2>
