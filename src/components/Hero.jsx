@@ -10,9 +10,14 @@ const Hero = () => {
 
   return (
     <>
-      <section className="mx-8 py-10 md:mx-32 md:py-10 md:pb-0 text-center md:flex md:relative">
-        <img aria-hidden="true" src={width <= 768 ? heroImageMobile : heroImageDesktop} alt="Hero Image" />
-        <div className="bg-white md:w-[650px] md:p-7 md:absolute md:bottom-0 md:right-0">
+      <section className="mx-8 py-10 md:mx-32 md:py-10 md:pb-0 text-center md:flex md:relative md:">
+        <img
+          className="md:hover:z-10 md:hover:opacity-[0.7] duration-300 ease-out"
+          aria-hidden="true"
+          src={width <= 768 ? heroImageMobile : heroImageDesktop}
+          alt="Hero Image"
+        />
+        <div className="bg-white md:w-[min(650px,100%)] md:p-7 md:absolute md:bottom-0 md:right-0">
           <h2 className="mt-8 md:mt-0 text-4xl md:text-5xl font-josefin">THE LEADER IN INTERACTIVE VR</h2>
           <p className="mt-5 text-base md:text-xl text-veryDarkGray px-3 font-alata">
             Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our
